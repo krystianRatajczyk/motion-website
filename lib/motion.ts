@@ -33,3 +33,13 @@ export const fadeIn = (
     },
   };
 };
+
+export const zoomIn = (duration: number, delay: number) => {
+  return {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { delay: delay, duration, ease: "easeOut" },
+    },
+  };
+};

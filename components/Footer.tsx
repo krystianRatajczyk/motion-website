@@ -18,7 +18,10 @@ const Footer = () => {
           >
             {footerLinks.map((footerLink) => {
               return (
-                <div className="flex gap-3 sm:gap-1 items-center ">
+                <div
+                  className="flex gap-3 sm:gap-1 items-center "
+                  key={footerLink.id}
+                >
                   <footerLink.icon size={30} color="#b1b2b7" />
                   <h2 className="text-[#b1b2b7] font-bold text-[17px] sm:text-[14px]">
                     {footerLink.label}
