@@ -19,7 +19,6 @@ export const fadeIn = (
         delay: delay,
         duration: duration,
         ease: "easeOut",
-        when: "beforeChildren",
       },
     },
     exit: {
@@ -40,7 +39,12 @@ export const zoomIn = (duration: number, delay: number) => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { delay: delay, duration, ease: "easeOut" },
+      transition: {
+        delay: delay,
+        duration,
+        ease: "easeOut",
+        when: "beforeChildren",
+      },
     },
   };
 };
