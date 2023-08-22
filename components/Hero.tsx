@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <div
-      className="py-[150px] xsm:px-8 sm:px-[50px] xl:px-[100px] px-[250px] 
+      className="py-[150px] pb-[170px] xsm:px-8 sm:px-[50px] xl:px-[100px] px-[250px] 
       w-full h-full
       flex flex-col gap-5 "
       style={{
@@ -46,7 +46,7 @@ const Hero = () => {
       <motion.div
         animate="visible"
         initial="hidden"
-        variants={fadeIn("down", "tween", 0.2, 0.3)}
+        variants={fadeIn("down", "tween", 0.4, 0.3)}
         className="font-semibold border border-gray-600 
       rounded-full w-fit flex items-center gap-2 px-3 py-1 bg-[#27293f] "
       >
@@ -56,7 +56,7 @@ const Hero = () => {
       <motion.div
         animate="visible"
         initial="hidden"
-        variants={zoomIn(0.5, 0.2)}
+        variants={zoomIn(0.5, 0.6)}
         className="max-w-xl lg:max-w-lg"
       >
         <h2 className="xsm:text-4xl lg:text-5xl text-7xl leading-[80px] tracking-wide font-bold text-white">
@@ -67,7 +67,7 @@ const Hero = () => {
         <motion.p
           animate="visible"
           initial="hidden"
-          variants={zoomIn(0.5, 0.4)}
+          variants={zoomIn(0.5, 0.8)}
           className="xsm:text-[15px] lg:text-md text-lg font-medium"
         >
           This is a demo showing a fully responsive page with a Spline 3D asset
@@ -78,7 +78,7 @@ const Hero = () => {
       <motion.div
         animate="visible"
         initial="hidden"
-        variants={zoomIn(0.5, 0.6)}
+        variants={zoomIn(0.5, 1)}
         className=" w-fit max-w-md gap-2 mt-2 flex justify-between lg:flex-col lg:gap-4"
       >
         <button

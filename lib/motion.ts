@@ -19,6 +19,7 @@ export const fadeIn = (
         delay: delay,
         duration: duration,
         ease: "easeOut",
+        when: "beforeChildren",
       },
     },
     exit: {
@@ -40,6 +41,55 @@ export const zoomIn = (duration: number, delay: number) => {
     visible: {
       opacity: 1,
       transition: { delay: delay, duration, ease: "easeOut" },
+    },
+  };
+};
+
+export const textVariant = (delay: number) => {
+  return {
+    hidden: {
+      y: -50,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 1.25,
+        delay: delay,
+      },
+    },
+  };
+};
+
+export const staggerContainer = (staggerChildren: number) => {
+  return {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: staggerChildren,
+      },
+    },
+  };
+};
+
+export const scaleIn = (delay: number) => {
+  return {
+    hidden: {
+      scale: 0,
+      opacity: 0,
+    },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        type: "tween",
+        delay: delay,
+        duration: 0.3,
+        ease: "easeOut",
+        when: "beforeChildren",
+      },
     },
   };
 };

@@ -11,7 +11,7 @@ const ComponentLayout: React.FC<ComponentLayoutProps> = ({
 }) => {
   return (
     <div
-      className={`backdrop-blur-xl ${absolute && "absolute bottom-0"} 
+      className={`backdrop-blur-[64px] ${absolute && "absolute bottom-0"} 
   border border-gray-600 rounded-3xl py-3 px-5 w-full`}
     >
       <div
