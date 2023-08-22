@@ -1,10 +1,11 @@
-import { Components, Hero } from "@/components";
+import { Components, Hero, Product } from "@/components";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Components />
+      <Product />
     </>
   );
 }

@@ -2,31 +2,33 @@ import React from "react";
 import { motion } from "framer-motion";
 import { scaleIn } from "@/lib/motion";
 
-const Circle = () => {
+interface CircleProps {
+  className: string;
+  padding: string;
+  delay: number;
+}
+
+const Circle: React.FC<CircleProps> = ({ className, padding, delay }) => {
   return (
     <motion.div
-      variants={scaleIn(1.6)}
+      variants={scaleIn(delay)}
       initial="hidden"
       viewport={{ once: true }}
       whileInView="visible"
-      className="overflow-visible absolute -top-[55px] -left-9 
-      -z-[100] w-[125%] 
-      sm:w-[110%] sm:-top-[30px] sm:-left-4
-      xsm:w-[102%]  xsm:-top-[17px] xsm:-left-[3px]
-      aspect-[1/1] 
-    rounded-full bg-transparent border border-gray-600 p-6"
+      className={`overflow-visible aspect-[1/1] ${className} ${padding}
+    rounded-full shadow-[0_35px_60px_-5px_rgba(0,0,0,0.3)] bg-transparent border border-gray-600 `}
     >
       <div
-        className="w-full h-full rounded-full -z-[100] bg-gradient-to-r
-        from-[#251733] to-[#141542] p-6"
+        className={`w-full h-full rounded-full -z-[100] bg-gradient-to-r
+        from-[#251733] to-[#141542] ${padding}`}
       >
         <div
-          className="w-full h-full rounded-full -z-[100] bg-gradient-to-r
-        from-[#3a244e] to-[#21205f] p-6"
+          className={`w-full h-full rounded-full -z-[100] bg-gradient-to-r
+        from-[#3a244e] to-[#21205f] ${padding}`}
         >
           <div
-            className="w-full h-full -z-[100] bg-[#ca3939] rounded-full
-          border-2 border-white"
+            className={`w-full h-full -z-[100] bg-[#ca3939] rounded-full
+          border-2 border-white ${padding}`}
           ></div>
         </div>
       </div>
