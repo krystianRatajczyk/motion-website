@@ -7,6 +7,7 @@ import ComponentLayout from "./ComponentLayout";
 import Circle from "./Circle";
 import Product from "./Product";
 import Panel from "./Panel";
+import Pages from "./Pages";
 
 export {
   Layout,
@@ -18,4 +19,5 @@ export {
   Circle,
   Product,
   Panel,
+  Pages,
 };

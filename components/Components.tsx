@@ -4,7 +4,7 @@ import { RiFoldersLine } from "react-icons/ri";
 import { Circle, ComponentLayout, Panel } from ".";
 import { FaRunning } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "@/lib/motion";
+import { fadeIn } from "@/lib/motion";
 
 const Components = () => {
   return (
