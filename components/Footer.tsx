@@ -1,4 +1,5 @@
 import { footerLinks } from "@/constants";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -18,7 +19,8 @@ const Footer = () => {
           >
             {footerLinks.map((footerLink) => {
               return (
-                <div
+                <Link
+                  href={footerLink.href}
                   className="flex gap-3 sm:gap-1 items-center "
                   key={footerLink.id}
                 >
@@ -26,7 +28,7 @@ const Footer = () => {
                   <h2 className="text-[#b1b2b7] font-bold text-[17px] sm:text-[14px]">
                     {footerLink.label}
                   </h2>
-                </div>
+                </Link>
               );
             })}
           </div>

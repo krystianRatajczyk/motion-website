@@ -47,7 +47,7 @@ const Hero = () => {
         animate="visible"
         initial="hidden"
         variants={fadeIn("down", "tween", 0.4, 0.3)}
-        className="font-semibold border border-gray-600 
+        className="z-[100] font-semibold border border-gray-600 
       rounded-full w-fit flex items-center gap-2 px-3 py-1 bg-[#27293f] "
       >
         Updated for IOS 16
