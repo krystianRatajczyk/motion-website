@@ -1,17 +1,42 @@
 import { navLinks } from "@/constants";
 import { styles } from "@/styles";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeIn } from "@/lib/motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const pathname = usePathname();
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="relative w-full bg-[#000000] flex justify-between items-center py-3 px-10">
+    <nav
+      className={`${
+        pathname == "/" ? "sticky top-0" : "relative"
+      } z-[1000] w-full ${
+        scrollPosition > 20
+          ? "bg-[rgba(0,0,0,0.6)] backdrop-blur-xl"
+          : "bg-[#000000]"
+      } flex justify-between items-center py-3 px-10`}
+    >
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -58,7 +83,7 @@ const Navbar = () => {
             <Link
               href={navLink.href}
               key={navLink.id}
-              className={`rounded-lg font-medium border border-[#000000]
+              className={`rounded-lg font-medium border border-transparent
                  hover:border-[#333333]
                  px-4 py-2 ${styles.transition}`}
             >
@@ -72,7 +97,7 @@ const Navbar = () => {
           href="/login"
           className={`font-semibold text-[16px] py-2 
           px-4 border border-blue-700 hover:border-white 
-           rounded-full rounded-br-none ${styles.transition}`}
+           rounded-full rounded-br-none bg-black ${styles.transition}`}
         >
           SIGN UP
         </Link>

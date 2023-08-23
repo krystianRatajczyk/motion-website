@@ -18,3 +18,27 @@ export const footerLinks = [
   { id: 5, label: "UPDATES", href: "/updates", icon: LuFolders },
   { id: 6, label: "INSTAGRAM", href: "/", icon: AiOutlineInstagram },
 ];
+
+export const updateCards = [
+  {
+    id: 1,
+    image:
+      "https://framerusercontent.com/images/5BBPTIfUe45LpfihrmRCxmak1E.jpg?scale-down-to=1024",
+    description:
+      "Framer offers built-in analytics to help you gain insight on the performance of your website. These analytics are privacy compatible, live, and accurate. However, in order to gain a more detailed overview of activity within your sites, you may want to consider integrating another tool such as Google Analytics and combine the insights together. ",
+    title: "Create 3D Site with Spline and React",
+    date: "JULY 2022",
+    shadows: true,
+  },
+  {
+    id: 2,
+    image:
+      "https://framerusercontent.com/images/YyNsZXJSARP6Y6rOvtqUgYQf1pc.jpg?scale-down-to=1024",
+    description:
+      "Design and code an iOS app with Rive animated assets, icon animations, custom layouts and interactions",
+    title: "Build an Animated App with Rive and SwiftUI",
+    date: "JUNE 2022",
+    shadows: false,
+    border: "border border-[rgba(209,209,209,0.25)]",
+  },
+];

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Login = () => {
   return (
     <motion.div
-      variants={zoomIn(0.2, 0.1)}
+      variants={zoomIn(0.3, 0.1)}
       animate="visible"
       initial="hidden"
       className="flex items-center justify-center 

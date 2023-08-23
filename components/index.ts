@@ -8,6 +8,7 @@ import Circle from "./Circle";
 import Product from "./Product";
 import Panel from "./Panel";
 import Pages from "./Pages";
+import UpdateCard from "./UpdateCard";
 
 export {
   Layout,
@@ -20,4 +21,5 @@ export {
   Product,
   Panel,
   Pages,
+  UpdateCard,
 };

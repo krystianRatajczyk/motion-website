@@ -2,7 +2,7 @@ export const fadeIn = (
   direction: string,
   type: string,
   delay: number,
-  duration: number
+  duration: number,
 ) => {
   return {
     hidden: {
