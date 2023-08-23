@@ -2,7 +2,17 @@ import { RxComponent1 } from "react-icons/rx";
 import { VscVerified } from "react-icons/vsc";
 import { LuFolders } from "react-icons/lu";
 import { LiaDiscord } from "react-icons/lia";
-import { AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
+import {
+  AiOutlineYoutube,
+  AiOutlineInstagram,
+  AiFillLock,
+  AiOutlineCreditCard,
+} from "react-icons/ai";
+import { BsFillPencilFill, BsGlobe2 } from "react-icons/bs";
+import { PiBooks, PiPersonSimpleRunBold } from "react-icons/pi";
+import { GoStack } from "react-icons/go";
+import { BiMedal } from "react-icons/bi";
+import { IoMdCloudy } from "react-icons/io";
 
 export const navLinks = [
   { id: 1, label: "Components", href: "/" },
@@ -40,5 +50,46 @@ export const updateCards = [
     date: "JUNE 2022",
     shadows: false,
     border: "border border-[rgba(209,209,209,0.25)]",
+  },
+];
+
+export const planBenefits = [
+  { id: 1, icon: BsGlobe2, benefit: "Custom domain" },
+  { id: 2, icon: AiFillLock, benefit: "Password protect" },
+  { id: 3, icon: PiBooks, benefit: "10GB bandwidth" },
+  { id: 4, icon: GoStack, benefit: "1,000 CMS items" },
+  { id: 5, icon: PiPersonSimpleRunBold, benefit: "10,000 visitors" },
+];
+
+export const plans = [
+  {
+    id: 1,
+    topIcon: BsFillPencilFill,
+    price: "$15/mo",
+    planName: "FREE",
+    switch: false,
+    buttonIcon: BsFillPencilFill,
+    buttonLabel: "TRY FOR FREE",
+    color: "#dfa7a0",
+  },
+  {
+    id: 2,
+    topIcon: BiMedal,
+    price: "$30/mo",
+    planName: "BASIC",
+    switch: true,
+    buttonIcon: AiOutlineCreditCard,
+    buttonLabel: "SUBSCRIBE",
+    color: "blur",
+  },
+  {
+    id: 3,
+    topIcon: IoMdCloudy,
+    price: "$45/mo",
+    planName: "PRO",
+    switch: true,
+    buttonIcon: AiOutlineCreditCard,
+    buttonLabel: "SUBSCRIBE",
+    color: "#180d04",
   },
 ];

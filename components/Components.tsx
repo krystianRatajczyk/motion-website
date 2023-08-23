@@ -2,9 +2,9 @@ import React from "react";
 import { BsRocketFill } from "react-icons/bs";
 import { RiFoldersLine } from "react-icons/ri";
 import { Circle, ComponentLayout, Panel } from ".";
-import { FaRunning } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/motion";
+import { PiPersonSimpleRunBold } from "react-icons/pi";
 
 const Components = () => {
   return (
@@ -67,7 +67,7 @@ const Components = () => {
             rounded-3xl rounded-tl-none drop-shadow-xl"
           >
             <h2 className="text-2xl font-bold p-4 pt-5 flex items-center gap-3 justify-center w-full">
-              <FaRunning size={30} absolute />
+              <PiPersonSimpleRunBold size={30} absolute />
               Close Your Rings
             </h2>
             <p className=" mx-5 pb-5">

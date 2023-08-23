@@ -9,6 +9,7 @@ import Product from "./Product";
 import Panel from "./Panel";
 import Pages from "./Pages";
 import UpdateCard from "./UpdateCard";
+import PriceCard from "./PriceCard";
 
 export {
   Layout,
@@ -22,4 +23,5 @@ export {
   Panel,
   Pages,
   UpdateCard,
+  PriceCard,
 };
