@@ -93,3 +93,68 @@ export const plans = [
     color: "#180d04",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Retta Pfannerstill",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    job: "MOBILE DEVELOPER",
+    opinion:
+      "Your first book was extremely helpful for me because, like yourself, I also started off as a pixel-pusher and I liked to make things look pretty without thinking too much of how design really functions. Your book has really helped me to fine-tune my skills in design!",
+  },
+  {
+    id: 2,
+    name: "Vicky Kub",
+    image:
+      "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    job: "FOUNDER OF ABDZ",
+    opinion:
+      "My first iOS app is available on the AppStore. I literally didn’t know anything about SwiftUI (still not much) and in probably 4 weeks was able to recreate my android app for iOS. Highly recommend MengTo videos!",
+  },
+  {
+    id: 3,
+    name: "Presley Gislason",
+    image:
+      "https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    job: "UX DESIGNER AT GOOGLE",
+    opinion:
+      "I found and bought Design+Code by Meng To which takes you through each step of the process from design to code to app store submission.",
+  },
+  {
+    id: 4,
+    name: "Rigoberto Heaney",
+    image:
+      "https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    job: "DESIGNER AT BLUSH",
+    opinion:
+      "Meng To's book totally changed my design workflow. It even inspired me to start design workshops and YouTube tutorials.",
+  },
+];
+
+export const FAQ = [
+  {
+    id: 1,
+    question: "How are paid plans billed?",
+    answer:
+      "Paid plans are billed both at a Site and Team level. Both subscriptions are always linked to the email of the purchaser. In order to get extra features and faster loading time to your site, you can acquire any of our site plans. In the moment of purchasing the first site plan within a team, a Team account will be added automatically so editors will be charged at a team level.",
+  },
+  {
+    id: 2,
+    question: "Do you accept Paypal?",
+    answer:
+      "Yes, we accept PayPal for the one-year plan only. Purchasing through PayPal will not renew your subscription at the end of your one-year period.",
+  },
+  {
+    id: 3,
+    question: "How do I pay?",
+    answer:
+      "You can purchase a Pro subscription anytime with a credit card. Or, you can purchase an annual plan with PayPal that will not auto-renew.",
+  },
+  {
+    id: 4,
+    question: "Can I download the content?",
+    answer: "Yes, you can download the videos, source files, ePub files and resources such as icons, illustrations, mockups, etc. These come with your subscription, even the monthly plan.",
+  },
+];
